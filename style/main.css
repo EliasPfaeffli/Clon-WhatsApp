@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* variables */
+
+:root {
+  --primary-color: #0a9c6f;
+  --grey-900: #0d1919;
+  --grey-700: #1f2c34;
+  --grey-300: #fefff6;
+  --grey-200: #f1f2f6;
+  --green-400: #138b80;
+  --green-300: #2dca7a;
+  --green-100: #dcf8c6;
+
+  --primary-font: "roboto", "sans-serif";
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    padding: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    width: 85%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px -50px var(--grey-900);
+}
+
+aside{
+    background-color:var(--grey-900);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+aside header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--grey-900);
+    box-shadow: 1px -30px 30px 1px whitesmoke;
+
+}
+.image-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.title-profile{
+    font-size: 1em;
+}
+
+.image-name img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.children svg{
+    width: 20px;
+    stroke: #6f767b; 
+    transition: transform ease .2s;
+}
+.children svg:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+.actions{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.actions button{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
